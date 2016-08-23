@@ -3,7 +3,7 @@ import csv
 import math
 
 if len(sys.argv) < 3:
-    print "Invoke with a csv file as the classifications, and a second with class names."
+    print "Invoke glosser with a csv file as the classifications, and a second with class names."
     sys.exit(1)
 
 classifiers = []
@@ -24,8 +24,6 @@ with open(sys.argv[2], 'rb') as csvfile:
 
 classifiers = [map(float, row) for row in classifiers] 
 
-# print classifiers
-
 counts = {}
 
 total = 0
@@ -37,8 +35,6 @@ with open('/dev/stdin', 'r') as f:
 
 for i in xrange(0,256):
     counts[i] = counts.get(i, 0)
-
-# print counts
 
 # Naive Bayes
 # Bayes:
@@ -64,22 +60,10 @@ for i in xrange(0,len(classifiers)):
     for j in xrange(0,256):
         if (classifiers[i][j] != 0.0):
             val = val + counts[j] * math.log(classifiers[i][j])
-#    val = math.log(1.0/len(classifiers)) + val
-#    print val
+    print classes[classifications[i]] + " : " + str(val)
     if val > max:
         max = val
         argmax = classifications[i]
 
-# print sys.argv[1]
-
-# print max
 print classes[argmax]
 
-    #    print str(i) + " : " + str(counts.get(i, 0))
-            
-    
-
-#for i in xrange(0,len(classifiers)):
-#    for j in xrange(0,len(classifiers[i])):
-#        if classifiers[i][j] == 0.0:
-#            classifiers[i][j] = min
