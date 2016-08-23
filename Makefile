@@ -12,6 +12,12 @@ test:
 	python glosser.py classifiers.csv classes.csv < test/hoardmanager.h
 	python glosser.py classifiers.csv classes.csv < test/Scheduler.scala
 	python glosser.py classifiers.csv classes.csv < test/student_eval.cgi
+	python glosser.py classifiers.csv classes.csv < test/divbyzero.c
+	python glosser.py classifiers.csv classes.csv < test/divbyzero.cpp
+	python glosser.py classifiers.csv classes.csv < test/divbyzero.js
+	python glosser.py classifiers.csv classes.csv < test/divbyzero.py
+	python glosser.py classifiers.csv classes.csv < test/divbyzero.pl
+	python glosser.py classifiers.csv classes.csv < test/divbyzero.rb
 
 classifiers.csv: python.csv javascript.csv cplusplus.csv typescript.csv ruby.csv perl.csv scala.csv c.csv
 	cat python.csv javascript.csv cplusplus.csv typescript.csv ruby.csv perl.csv scala.csv c.csv > classifiers.csv
