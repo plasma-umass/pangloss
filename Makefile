@@ -1,6 +1,17 @@
 all:
 
+.PHONY: test train
+
 train: classifiers.csv
+
+test:
+	python glosser.py classifiers.csv classes.csv < test/coffee_webservice.rb
+	python glosser.py classifiers.csv classes.csv < test/csrankings.js
+	python glosser.py classifiers.csv classes.csv < test/csrankings.py
+	python glosser.py classifiers.csv classes.csv < test/libhoard.cpp
+	python glosser.py classifiers.csv classes.csv < test/hoardmanager.h
+	python glosser.py classifiers.csv classes.csv < test/Scheduler.scala
+	python glosser.py classifiers.csv classes.csv < test/student_eval.cgi
 
 classifiers.csv: python.csv javascript.csv cplusplus.csv typescript.csv ruby.csv perl.csv scala.csv
 	cat python.csv javascript.csv cplusplus.csv typescript.csv ruby.csv perl.csv scala.csv > classifiers.csv
