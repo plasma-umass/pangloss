@@ -60,6 +60,7 @@ for i in xrange(0,len(classifiers)):
     for j in xrange(0,256):
         if (classifiers[i][j] != 0.0):
             val = val + counts[j] * math.log(classifiers[i][j])
+    print str(val) + " : " + classes[classifications[i]]
     if val > max:
         max = val
         argmax = classifications[i]
