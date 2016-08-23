@@ -1,15 +1,9 @@
 all:
 
-train: classifiers.csv \
-	train/python-files.txt.gz \
-	train/javascript-files.txt.gz \
-	train/cplusplus-files.txt.gz \
-	train/typescript-files.txt.gz \
-	train/ruby-files.txt.gz \
-	train/perl-files.txt.gz
+train: classifiers.csv
 
-classifiers.csv: python.csv javascript.csv cplusplus.csv typescript.csv ruby.csv perl.csv
-	cat python.csv javascript.csv cplusplus.csv typescript.csv ruby.csv perl.csv > classifiers.csv
+classifiers.csv: python.csv javascript.csv cplusplus.csv typescript.csv ruby.csv perl.csv scala.csv
+	cat python.csv javascript.csv cplusplus.csv typescript.csv ruby.csv perl.csv scala.csv > classifiers.csv
 
 python.csv: train/python-files.txt.gz
 	gzip -dc train/python-files.txt.gz     | python count-ascii.py 1 > python.csv
@@ -28,4 +22,7 @@ ruby.csv:  train/ruby-files.txt.gz
 
 perl.csv:  train/perl-files.txt.gz
 	gzip -dc train/perl-files.txt.gz       | python count-ascii.py 6 > perl.csv
+
+scala.csv:  train/scala-files.txt.gz
+	gzip -dc train/scala-files.txt.gz       | python count-ascii.py 7 > scala.csv
 
