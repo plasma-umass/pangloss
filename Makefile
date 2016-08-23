@@ -13,8 +13,8 @@ test:
 	python glosser.py classifiers.csv classes.csv < test/Scheduler.scala
 	python glosser.py classifiers.csv classes.csv < test/student_eval.cgi
 
-classifiers.csv: python.csv javascript.csv cplusplus.csv typescript.csv ruby.csv perl.csv scala.csv
-	cat python.csv javascript.csv cplusplus.csv typescript.csv ruby.csv perl.csv scala.csv > classifiers.csv
+classifiers.csv: python.csv javascript.csv cplusplus.csv typescript.csv ruby.csv perl.csv scala.csv c.csv
+	cat python.csv javascript.csv cplusplus.csv typescript.csv ruby.csv perl.csv scala.csv c.csv > classifiers.csv
 
 python.csv: train/python-files.txt.gz
 	gzip -dc train/python-files.txt.gz     | python count-ascii.py 1 > python.csv
@@ -36,4 +36,7 @@ perl.csv:  train/perl-files.txt.gz
 
 scala.csv:  train/scala-files.txt.gz
 	gzip -dc train/scala-files.txt.gz       | python count-ascii.py 7 > scala.csv
+
+c.csv:  train/c-files.txt.gz
+	gzip -dc train/c-files.txt.gz       | python count-ascii.py 8 > c.csv
 
