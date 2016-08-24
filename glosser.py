@@ -67,13 +67,15 @@ for i in xrange(0,256):
 
 argmax = classifications[0]
 max = float('-inf')
+ascii = list(xrange(32,128))
+ascii.insert(0, 9)
 for i in xrange(0,len(classifiers)):
     val = 0
-    for j in xrange(32,128):
+    
+    for j in ascii:
         c = classifiers[i][j]
         val = val + counts[j] * math.log(c)
-    # Disable prior for now
-    # val = val + math.log(prior[i])
+    val = val + math.log(prior[i])
     
     print str(val) + " : " + classes[classifications[i]]
     if val > max:
