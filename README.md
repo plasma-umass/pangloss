@@ -1,4 +1,4 @@
-Glosser: automatically detect the language a piece of code is written in
+pangloss: automatically detect the language a piece of code is written in
 
 Training data:
 * JavaScript sources from http://www.srl.inf.ethz.ch/js150.php
