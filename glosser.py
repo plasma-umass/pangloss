@@ -3,24 +3,36 @@ import csv
 import math
 
 if len(sys.argv) < 3:
-    print "Invoke glosser with a csv file as the classifications, and a second with class names."
-    sys.exit(1)
+    classifierFn = "classifiers.csv"
+    clazzesFn    = "classes.csv"
+else:
+    classifierFn = sys.argv[1]
+    clazzesFn = sys.argv[2]
 
 classifiers = []
 classifications = []
 classes = {}
+prior = {}
 
-with open(sys.argv[1], 'rb') as csvfile:
+with open(classifierFn, 'rb') as csvfile:
     reader = csv.reader(csvfile)
     for row in reader:
         clazz = int(row.pop()) # class is last entry
         classifications.append(clazz)
         classifiers.append(row)
 
-with open(sys.argv[2], 'rb') as csvfile:
+priortotal = 0
+with open(clazzesFn, 'rb') as csvfile:
     reader = csv.reader(csvfile)
+    i = 0
     for row in reader:
         classes[int(row[0])] = row[1]
+        prior[i] = float(row[2])
+        priortotal = priortotal + prior[i]
+        i = i + 1
+
+for key in prior:
+    prior[key] = prior[key] / priortotal
 
 classifiers = [map(float, row) for row in classifiers] 
 
@@ -57,9 +69,12 @@ argmax = classifications[0]
 max = float('-inf')
 for i in xrange(0,len(classifiers)):
     val = 0
-    for j in xrange(0,256):
-        if (classifiers[i][j] != 0.0):
-            val = val + counts[j] * math.log(classifiers[i][j])
+    for j in xrange(32,128):
+        c = classifiers[i][j]
+        val = val + counts[j] * math.log(c)
+    # Disable prior for now
+    # val = val + math.log(prior[i])
+    
     print str(val) + " : " + classes[classifications[i]]
     if val > max:
         max = val

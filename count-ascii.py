@@ -17,7 +17,7 @@ with open('/dev/stdin', 'r') as f:
 # See https://en.wikipedia.org/wiki/Additive_smoothing
 for i in xrange(0,256):
     print str(counts.get(i,1) / float(total + 1)) + ",",
-    #    print str(counts.get(i,0)) + ",",
+    # print str(counts.get(i,0) / float(total)) + ",",
 
 print sys.argv[1]
 
