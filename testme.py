@@ -17,18 +17,29 @@ tests = [("pypy pangloss2.py < test/csrankings.js", "JavaScript"),
          ("pypy pangloss2.py < test/divbyzero.scala", "Scala"),
          ("pypy pangloss2.py < test/divbyzero.java", "Java"),
          ("pypy pangloss2.py < test/hashjoin.java", "Java"),
-         ("pypy pangloss2.py < test/paperinfo.php", "PHP")]
+         ("pypy pangloss2.py < test/paperinfo.php", "PHP"),
+         ("pypy pangloss2.py < test/bottles.c", "C"),
+         ("pypy pangloss2.py < test/bottles.cpp", "C++"),
+         ("pypy pangloss2.py < test/bottles.js", "JavaScript"),
+         ("pypy pangloss2.py < test/bottles.php", "PHP"),
+         ("pypy pangloss2.py < test/bottles.py", "Python"),
+         ("pypy pangloss2.py < test/bottles.pl", "Perl"),
+         ("pypy pangloss2.py < test/bottles.rb", "Ruby"),
+         ("pypy pangloss2.py < test/bottles.scala", "Scala"),
+         ("pypy pangloss2.py < test/bottles.m", "Objective-C"),
+         ("pypy pangloss2.py < test/customrr.m", "Objective-C"),
+         ("pypy pangloss2.py < test/bottles.java", "Java")]
 
 successes = 0
 failures = 0
 for (cmd, value) in tests:
-    str = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE).stdout.read().strip()
-    if (str != value):
+    string = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE).stdout.read().strip()
+    if (string != value):
         failures = failures + 1
-        print "Failed : " + cmd + " -> " + str + " ( should be " + value + ")"
+        print "Failed : " + cmd + " -> " + string + " ( should be " + value + ")"
     else:
         successes = successes + 1
 
 passrate = 100.0 * float(successes)/(successes + failures)
 print passrate,
-print "% tests passed."
+print "% tests passed (" + str(successes) + "/" + str(successes+failures) + ")."
