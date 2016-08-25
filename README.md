@@ -5,5 +5,7 @@ Training data:
 * C++ sources from Clang
 * Scala sources from Apache Spark
 * Ruby sources from the top 20 most downloaded gems on Rubygems.org
-
-
+* Java sources from OpenJDK, Hadoop, and Eclipse Core
+  - comments removed with:
+      perl -0pe 's|//.*?\n|\n|g; s#/\*(.|\n)*?\*/##g;'
+  
