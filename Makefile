@@ -8,25 +8,7 @@ clean:
 	rm python.csv javascript.csv cplusplus.csv typescript.csv ruby.csv perl.csv scala.csv c.csv java.csv
 
 test:
-	pypy pangloss2.py < test/coffee_webservice.rb
-	pypy pangloss2.py < test/csrankings.js
-	pypy pangloss2.py < test/csrankings.py
-	pypy pangloss2.py < test/libhoard.cpp
-	pypy pangloss2.py < test/hoardmanager.h
-	pypy pangloss2.py < test/Scheduler.scala
-	pypy pangloss2.py < test/student_eval.cgi
-	pypy pangloss2.py < test/ProxyUriUtils.java
-	pypy pangloss2.py < test/jquery-3.1.0.js
-	pypy pangloss2.py < test/divbyzero.c
-	pypy pangloss2.py < test/divbyzero.cpp
-	pypy pangloss2.py < test/divbyzero.js
-	pypy pangloss2.py < test/divbyzero.py
-	pypy pangloss2.py < test/divbyzero.pl
-	pypy pangloss2.py < test/divbyzero.rb
-	pypy pangloss2.py < test/divbyzero.scala
-	pypy pangloss2.py < test/divbyzero.java
-	pypy pangloss2.py < test/hashjoin.java
-	pypy pangloss2.py < test/paperinfo.php
+	python testme.py
 
 classifiers.csv: python.csv javascript.csv cplusplus.csv typescript.csv ruby.csv perl.csv scala.csv c.csv java.csv
 	cat python.csv javascript.csv cplusplus.csv typescript.csv ruby.csv perl.csv scala.csv c.csv java.csv > classifiers.csv
