@@ -97,5 +97,5 @@ for i in xrange(0,len(classifiers)):
         max = val
         argmax = i
 
-print classes[argmax]
+print classes[argmax],
 
