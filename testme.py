@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import subprocess
 
 tests = [("./pangloss.py test/csrankings.js", "JavaScript"),

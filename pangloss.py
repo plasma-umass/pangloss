@@ -52,8 +52,9 @@ java = { '{' : 594399 ,  '}' : 582986 ,  '=' : 569661 ,  'public' : 295333 ,  '+
 
 ruby = { '#' : 16500 ,  'end' : 11966 ,  '=' : 10622 ,  'the' : 6374 ,  'def' : 5902 ,  'if' : 4075 ,  'to' : 3113 ,  'a' : 2810 ,  '=>' : 1978 ,  'is' : 1975 ,  'of' : 1921 ,  'do' : 1897 ,  'and' : 1699 ,  'for' : 1604 ,  '##' : 1434 ,  'in' : 1255 ,  'unless' : 1241 ,  'be' : 1238 ,  'require' : 1174 ,  'class' : 1150 ,  '<<' : 1140 ,  'else' : 1129 ,  '==' : 1128 ,  '}' : 1084 ,  'that' : 1039 ,  'true' : 1034 ,  'this' : 957 ,  'return' : 943 ,  '{' : 935 ,  'when' : 904 ,  'then' : 904 ,  '&&' : 902 ,  'gem' : 888 ,  'not' : 823 ,  'or' : 810 ,  'nil' : 761 ,  'raise' : 747 ,  'The' : 746 ,  'are' : 735 ,  '||' : 730 ,  'with' : 704 ,  'from' : 702 ,  'name' : 668 ,  'an' : 665 ,  '"' : 643 ,  ':nodoc:' : 615 ,  'module' : 614 ,  'will' : 580 ,  '<' : 571 ,  '[]' : 544 ,  'false,' : 542 ,  'as' : 537 ,  '||=' : 523 ,  'path' : 517 ,  'nil,' : 507 ,  'by' : 495 ,  'it' : 490 ,  'on' : 488 ,  'If' : 480 ,  'false' : 471 ,  'options' : 470 ,  'version' : 463 ,  ':' : 460 ,  '?' : 456 ,  'value' : 452 ,  'rescue' : 445 ,  'given' : 439 ,  'attr_reader' : 434 ,  'file' : 433 ,  'gems' : 432 ,  '+' : 427 ,  'you' : 427 ,  'spec' : 426 ,  'frozen_string_literal:' : 412 ,  'all' : 404 ,  'Returns' : 403 ,  'can' : 391 ,  'This' : 374 ,  '1' : 367 ,  'source' : 358 ,  '@return' : 354 ,  'command' : 331 ,  '-' : 329 ,  '\\' : 320 ,  '{}' : 303 ,  'begin' : 301 ,  'result' : 296 ,  'your' : 296 ,  'dependency' : 296 ,  'set' : 295 ,  'private' : 294 ,  'use' : 282 ,  'default' : 272 ,  'Bundler' : 270 ,  'used' : 264 ,  'new' : 264 ,  'elsif' : 263 ,  '=~' : 263 ,  '*' : 261 ,  'specs' : 260 }
 
+perl = { '=' : 71865 ,  '{' : 60869 ,  'my' : 49142 ,  '=>' : 37536 ,  '}' : 32871 ,  '#' : 25755 ,  'if' : 24830 ,  "'sub" : 23745 ,  'return' : 21174 ,  "}'," : 20523 ,  ')' : 16798 ,  '(' : 13307 ,  ');' : 11101 ,  '@_;' : 9223 ,  'the' : 8954 ,  'shift;' : 8936 ,  'unless' : 6937 ,  '};' : 6586 ,  '$self' : 6538 ,  'eq' : 6202 ,  '=~' : 6194 ,  'to' : 6146 ,  ':' : 5922 ,  'and' : 5780 ,  '?' : 5657 ,  'for' : 5653 ,  'or' : 5264 ,  'a' : 5037 ,  '||' : 4710 ,  'else' : 4381 ,  '&&' : 4378 ,  '.' : 4304 ,  'defined' : 4238 ,  'is' : 3648 ,  '$VAR1' : 3299 ,  'not' : 3252 ,  '1' : 3014 ,  'in' : 3008 ,  '0;' : 2987 ,  'push' : 2934 ,  'of' : 2921 ,  '1;' : 2786 ,  "}'" : 2537 ,  '==' : 2503 ,  'elsif' : 2460 ,  '.=' : 2425 ,  '($self,' : 2389 ,  'we' : 2319 ,  'sub' : 2298 ,  '0' : 2195 ,  'be' : 1941 ,  'return;' : 1932 ,  '-' : 1914 ,  '},' : 1893 ,  '[' : 1872 ,  'die' : 1857 ,  'foreach' : 1754 ,  'map' : 1735 ,  'croak' : 1692 ,  '$_' : 1684 ,  'print' : 1672 ,  'ref' : 1626 ,  'it' : 1620 ,  'delete' : 1617 ,  '"' : 1604 ,  'no' : 1583 ,  '||=' : 1544 ,  'local' : 1534 ,  '0,' : 1507 ,  'while' : 1476 ,  '$name' : 1437 ,  '$self,' : 1397 ,  'this' : 1396 ,  'next' : 1376 ,  'require' : 1358 ,  '>' : 1356 ,  'keys' : 1355 ,  'exists' : 1348 ,  "\\'\\';" : 1303 ,  '+' : 1296 ,  '@_' : 1265 ,  '@{' : 1253 ,  'that' : 1252 ,  'shift' : 1218 ,  '$class' : 1201 ,  '1,' : 1168 ,  'with' : 1149 ,  'eval' : 1148 ,  'as' : 1144 ,  "\\'" : 1139 ,  'an' : 1122 ,  'undef' : 1099 ,  'undef;' : 1097 ,  '$self;' : 1088 ,  'name' : 1076 ,  'from' : 1051 ,  '{};' : 1045 ,  '()' : 1039 ,  '$value' : 1011 ,  'on' : 1009 }
 
-perl = { '#' : 20217 ,  ';' : 13281 ,  '=' : 7507 ,  '{' : 6315 ,  '}' : 5833 ,  'LETTER' : 5626 ,  'my' : 5253 ,  'the' : 5172 ,  'CJK' : 5098 ,  'if' : 3953 ,  'LATIN' : 3229 ,  'to' : 3033 ,  'WITH' : 2987 ,  '=>' : 2438 ,  'SMALL' : 2250 ,  'is' : 2219 ,  'CAPITAL' : 2064 ,  'a' : 1945 ,  'and' : 1788 ,  'for' : 1766 ,  'of' : 1648 ,  'in' : 1543 ,  'print' : 1373 ,  '=~' : 1262 ,  'or' : 1115 ,  'sub' : 1083 ,  'MARK>' : 1035 ,  '(' : 1023 ,  ')' : 1016 ,  'use' : 974 ,  'that' : 951 ,  'KATAKANA' : 933 ,  'eq' : 883 ,  'be' : 869 ,  'unless' : 788 ,  '"' : 777 ,  'it' : 763 ,  'die' : 760 ,  'we' : 744 ,  'ACUTE' : 740 ,  'not' : 740 ,  'return' : 732 ,  'this' : 718 ,  'RADICAL' : 699 ,  'SOUND' : 696 ,  '##' : 685 ,  'U' : 684 ,  '.' : 679 ,  '-' : 668 ,  'AND' : 654 ,  '+' : 651 ,  'are' : 646 ,  'KANGXI' : 642 ,  '<LATIN' : 627 ,  'else' : 620 ,  '&&' : 606 ,  'ok' : 602 ,  ':' : 598 ,  'with' : 588 ,  'as' : 584 ,  'O' : 578 ,  ');' : 566 ,  '||' : 511 ,  '?' : 506 ,  'from' : 498 ,  'A' : 494 ,  'E' : 492 ,  'file' : 489 ,  'If' : 479 ,  'The' : 478 ,  'defined' : 470 ,  'VOICED' : 467 ,  'GRAVE' : 455 ,  'by' : 441 ,  'push' : 437 ,  'on' : 428 ,  'This' : 419 ,  'foreach' : 411 ,  'elsif' : 410 ,  'new' : 403 ,  '0;' : 403 ,  '1' : 403 ,  'will' : 402 ,  '*' : 400 ,  '1;' : 399 ,  '==' : 399 ,  'an' : 392 ,  'have' : 365 ,  '|' : 357 ,  'all' : 355 ,  'set' : 352 ,  'while' : 347 ,  '};' : 346 ,  '[' : 342 ,  'code' : 342 ,  'shift;' : 338 ,  '@_;' : 335 ,  'next' : 333 ,  '30FC' : 328 ,  'CARON' : 326 }
+# perl = { '#' : 20217 ,  ';' : 13281 ,  '=' : 7507 ,  '{' : 6315 ,  '}' : 5833 ,  'LETTER' : 5626 ,  'my' : 5253 ,  'the' : 5172 ,  'CJK' : 5098 ,  'if' : 3953 ,  'LATIN' : 3229 ,  'to' : 3033 ,  'WITH' : 2987 ,  '=>' : 2438 ,  'SMALL' : 2250 ,  'is' : 2219 ,  'CAPITAL' : 2064 ,  'a' : 1945 ,  'and' : 1788 ,  'for' : 1766 ,  'of' : 1648 ,  'in' : 1543 ,  'print' : 1373 ,  '=~' : 1262 ,  'or' : 1115 ,  'sub' : 1083 ,  'MARK>' : 1035 ,  '(' : 1023 ,  ')' : 1016 ,  'use' : 974 ,  'that' : 951 ,  'KATAKANA' : 933 ,  'eq' : 883 ,  'be' : 869 ,  'unless' : 788 ,  '"' : 777 ,  'it' : 763 ,  'die' : 760 ,  'we' : 744 ,  'ACUTE' : 740 ,  'not' : 740 ,  'return' : 732 ,  'this' : 718 ,  'RADICAL' : 699 ,  'SOUND' : 696 ,  '##' : 685 ,  'U' : 684 ,  '.' : 679 ,  '-' : 668 ,  'AND' : 654 ,  '+' : 651 ,  'are' : 646 ,  'KANGXI' : 642 ,  '<LATIN' : 627 ,  'else' : 620 ,  '&&' : 606 ,  'ok' : 602 ,  ':' : 598 ,  'with' : 588 ,  'as' : 584 ,  'O' : 578 ,  ');' : 566 ,  '||' : 511 ,  '?' : 506 ,  'from' : 498 ,  'A' : 494 ,  'E' : 492 ,  'file' : 489 ,  'If' : 479 ,  'The' : 478 ,  'defined' : 470 ,  'VOICED' : 467 ,  'GRAVE' : 455 ,  'by' : 441 ,  'push' : 437 ,  'on' : 428 ,  'This' : 419 ,  'foreach' : 411 ,  'elsif' : 410 ,  'new' : 403 ,  '0;' : 403 ,  '1' : 403 ,  'will' : 402 ,  '*' : 400 ,  '1;' : 399 ,  '==' : 399 ,  'an' : 392 ,  'have' : 365 ,  '|' : 357 ,  'all' : 355 ,  'set' : 352 ,  'while' : 347 ,  '};' : 346 ,  '[' : 342 ,  'code' : 342 ,  'shift;' : 338 ,  '@_;' : 335 ,  'next' : 333 ,  '30FC' : 328 ,  'CARON' : 326 }
 
 c = { '=' : 2676314 ,  '{' : 1368862 ,  '*' : 1254223 ,  '}' : 1051623 ,  'if' : 1022007 ,  '*/' : 854162 ,  '/*' : 807015 ,  'struct' : 703407 ,  'return' : 586933 ,  'int' : 542039 ,  'static' : 478685 ,  '0;' : 328241 ,  'for' : 229611 ,  '#include' : 227685 ,  '==' : 225465 ,  '&' : 223274 ,  '+' : 215075 ,  '0x00,' : 213429 ,  'void' : 211655 ,  'case' : 199378 ,  '#define' : 191776 ,  '},' : 187848 ,  'unsigned' : 181197 ,  'of' : 180900 ,  '-' : 178034 ,  '|' : 174062 ,  '0,' : 161034 ,  'else' : 158414 ,  '<' : 156471 ,  'break;' : 152386 ,  'goto' : 134425 ,  '};' : 129428 ,  'const' : 123385 ,  'in' : 121138 ,  '0)' : 115014 ,  'ret' : 112447 ,  '&&' : 107117 ,  '!=' : 104830 ,  'u32' : 98720 ,  '<<' : 96761 ,  'long' : 89361 ,  '|=' : 85573 ,  'char' : 84254 ,  'ret;' : 78141 ,  '||' : 76388 ,  '1;' : 73291 ,  'this' : 70846 ,  'u8' : 66476 ,  '1,' : 64523 ,  'on' : 63656 ,  '0);' : 62992 ,  'not' : 62199 ,  ':' : 61955 ,  'This' : 61835 ,  'i' : 61716 ,  'device' : 60665 ,  '>' : 60245 ,  'NULL;' : 59736 ,  '0' : 57635 ,  'or' : 56827 ,  '(i' : 55804 ,  'err' : 55224 ,  'with' : 53485 ,  '-EINVAL;' : 52526 ,  '\\' : 52301 ,  '+=' : 52252 ,  '?' : 47432 ,  '>>' : 47102 ,  'as' : 45980 ,  'return;' : 45190 ,  'NULL,' : 44293 ,  'err;' : 41835 ,  '#endif' : 41806 ,  'data' : 41289 ,  '"' : 40969 ,  '1' : 40800 ,  'i++)' : 40540 ,  'switch' : 40141 ,  '/**' : 39990 ,  'while' : 37648 ,  '>=' : 37432 ,  '&=' : 36354 ,  'i;' : 35563 ,  'flags);' : 34566 ,  '1);' : 34558 }
 
@@ -65,17 +66,26 @@ classifiers = [cplusplus, javascript, java, c, ruby, perl, typescript, python, s
 
 # Each extension corresponds to the classifier above.
 # We incorporate extension info as a weak prior, below.
-extensions = [[".cpp", ".hpp", ".hh", ".cc"], [".js"], [".java"], [".c",".h"], [".rb"], [".pl",".perl"], [".ts"], [".py"], [".scala"], [".php"], [".m"]]
+extensions = [[".cpp", ".hpp", ".hh", ".cc"],
+              [".js"],
+              [".java"],
+              [".c",".h"],
+              [".rb"],
+              [".pl",".pm"],
+              [".ts"],
+              [".py"],
+              [".scala"],
+              [".php"],
+              [".m"]]
 
-weakprior = 1.1 # 10% more likely if it has the given suffix
+extensionPrior = 1.1 # 10% more likely if it has the given suffix
 
 # Normalize classifiers
 
 for i in range(0, len(classifiers)):
     total = reduce(lambda x,y: x+y, classifiers[i].values())
     for j in classifiers[i].keys():
-        # Laplace smoothing (add 1).
-        classifiers[i][j] = float(classifiers[i][j] + 1.0) / (total + 1.0)
+        classifiers[i][j] = float(classifiers[i][j]) / total
 
 # Load up input file to be classified.
 
@@ -103,10 +113,9 @@ for i in xrange(0,len(classifiers)):
     # Incorporate a modest prior for the extension
     for thisext in extensions[i]:
         if ext == thisext:
-            val /= weakprior
+            val /= extensionPrior
             break
 
-    # print extensions[i], val
     # New maximum?
     if val > max:
         max = val
