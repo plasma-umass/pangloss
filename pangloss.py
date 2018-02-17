@@ -5,7 +5,8 @@
 # Copyright (C) 2016-2018 by Emery Berger <http://emeryberger.com>
 #
 # This language detector works by examining source contents and
-# ignores file suffixes and the like.
+# only uses file extensions as a hint. Based on a learned model
+# from corpora of programs.
 #
 # Usage:
 #   pangloss filename.ext
