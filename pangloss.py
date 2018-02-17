@@ -64,7 +64,8 @@ classifiers = [cplusplus, javascript, java, c, ruby, perl, typescript, python, s
 
 # Each extension corresponds to the classifier above.
 # We incorporate extension info as a weak prior, below.
-extensions = [".cpp", ".js", ".java", ".c", ".rb", ".pl", ".ts", ".py", ".scala", ".php", ".m"]
+extensions = [[".cpp", ".hpp", ".hh", ".cc"], [".js"], [".java"], [".c",".h"], [".rb"], [".pl",".perl"], [".ts"], [".py"], [".scala"], [".php"], [".m"]]
+
 weakprior = 1.1 # 10% more likely if it has the given suffix
 
 # Normalize classifiers
@@ -99,11 +100,12 @@ for i in xrange(0,len(classifiers)):
         val     += math.log(counts[word] * c)
 
     # Incorporate a modest prior for the extension
-    thisext = extensions[i]
-    if ext == thisext:
-        val /= weakprior
+    for thisext in extensions[i]:
+        if ext == thisext:
+            val /= weakprior
+            break
 
-    # print thisext, val
+    # print extensions[i], val
     # New maximum?
     if val > max:
         max = val
