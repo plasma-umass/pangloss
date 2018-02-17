@@ -15,6 +15,22 @@
 
 classes = ["C++", "JavaScript", "Java", "C", "Ruby", "Perl", "TypeScript", "Python", "Scala", "PHP", "Objective-C"]
 
+# Each extension corresponds to the classifier above.
+# We incorporate extension info as a weak prior, below.
+extensions = [[".cpp", ".hpp", ".hh", ".cc", ".cxx", ".hxx", ".C"],
+              [".js"],
+              [".java"],
+              [".c",".h"],
+              [".rb"],
+              [".pl",".pm"],
+              [".ts"],
+              [".py"],
+              [".scala"],
+              [".php"],
+              [".m"]]
+
+extensionPrior = 1.1 # 10% more likely if it has the given suffix
+
 import os
 import sys
 import csv
@@ -63,22 +79,6 @@ typescript = { '{' : 64204 ,  '}' : 49367 ,  '=' : 46513 ,  '//' : 27202 ,  'var
 
 
 classifiers = [cplusplus, javascript, java, c, ruby, perl, typescript, python, scala, php, objc]
-
-# Each extension corresponds to the classifier above.
-# We incorporate extension info as a weak prior, below.
-extensions = [[".cpp", ".hpp", ".hh", ".cc"],
-              [".js"],
-              [".java"],
-              [".c",".h"],
-              [".rb"],
-              [".pl",".pm"],
-              [".ts"],
-              [".py"],
-              [".scala"],
-              [".php"],
-              [".m"]]
-
-extensionPrior = 1.1 # 10% more likely if it has the given suffix
 
 # Normalize classifiers
 
