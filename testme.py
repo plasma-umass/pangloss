@@ -1,6 +1,7 @@
 import subprocess
 
 tests = [("pypy pangloss2.py < test/csrankings.js", "JavaScript"),
+         ("pypy pangloss2.py < test/csrankings.ts", "TypeScript"),
          ("pypy pangloss2.py < test/csrankings.py", "Python"),
          ("pypy pangloss2.py < test/libhoard.cpp", "C++"),
          ("pypy pangloss2.py < test/hoardmanager.h", "C++"),
