@@ -72,17 +72,20 @@ weakprior = 1.1 # 10% more likely if it has the given suffix
 for i in range(0, len(classifiers)):
     total = reduce(lambda x,y: x+y, classifiers[i].values())
     for j in classifiers[i].keys():
-        classifiers[i][j] = float(classifiers[i][j]) / total
+        # Laplace smoothing (add 1).
+        classifiers[i][j] = float(classifiers[i][j] + 1.0) / (total + 1.0)
 
 # Load up input file to be classified.
 
 counts = {}
 total = 0
+
 with open(fname, 'r') as f:
+    # Generate histogram of counts for each word.
     wordgen = words(f)
     for word in wordgen:
         counts[word] = counts.get(word, 0) + 1
-        total = total + 1
+        total += 1
 
 argmax = 0
 max = float('-inf')
@@ -90,16 +93,17 @@ max = float('-inf')
 for i in xrange(0,len(classifiers)):
 
     # Naive Bayes.
-    val = 0
+    val = 1
     for word in counts:
-        c       = classifiers[i].get(word, 0)
-        val     += counts[word] * c
+        c       = classifiers[i].get(word, 0.0001)
+        val     += math.log(counts[word] * c)
 
     # Incorporate a modest prior for the extension
     thisext = extensions[i]
     if ext == thisext:
-        val *= weakprior
+        val /= weakprior
 
+    # print thisext, val
     # New maximum?
     if val > max:
         max = val
