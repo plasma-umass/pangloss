@@ -8,4 +8,4 @@ Training data:
 * Java sources from OpenJDK, Hadoop, and Eclipse Core
   - comments removed with:
       perl -0pe 's|//.*?\n|\n|g; s#/\*(.|\n)*?\*/##g;'
-  
+* Perl sources from all modules included in Task::Kensho (https://metacpan.org/pod/Task::Kensho)
